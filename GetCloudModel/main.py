@@ -26,7 +26,7 @@ def process_cloud_image(image_path, output_path):
         img.save(output_path)
 
 def is_cloud_pixel(r, g, b):
-    return r > 100 and g > 100 and b > 100  # 假設雲朵是非常亮的像素
+    return r > 120 and g > 120 and b > 120  # 假設雲朵是非常亮的像素
 
 # 使用函數
-process_cloud_image('./inputImage/image.png', './outputImage/image.png')
+process_cloud_image('./inputImage/image.png', './outputImage/image1.png')
